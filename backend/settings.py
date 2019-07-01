@@ -80,13 +80,40 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+# Localhost...
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'django_api',
+#         'USER': 'root',
+#         'PASSWORD': '',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     },
+# }
+
+# Aurora...
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'django_api',
+#         'USER': 'admin',
+#         'PASSWORD': '',
+#         'HOST':
+#         'database-2-instance-1.cvczttbzyf2k.ap-southeast-1.rds.amazonaws.com',
+#         'PORT': '3306',
+#     },
+# }
+
+# RDS...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django_api',
-        'USER': 'root',
-        'PASSWORD': 'mysqlroot',
-        'HOST': '127.0.0.1',
+        'USER': 'admin',
+        'PASSWORD': '',
+        'HOST': 'database-3.cvczttbzyf2k.ap-southeast-1.rds.amazonaws.com',
         'PORT': '3306',
     },
 }

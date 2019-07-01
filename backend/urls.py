@@ -7,9 +7,9 @@ from django.conf.urls import url, include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include('backend.company.urls')),
-    url(r'^api/', include('backend.employee.urls')),
+    url(r'^api/employee/', include('backend.employee.urls')),
+    # url(r'^api/', include('backend.employee.urls')),
 ]
-
 """backend URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
